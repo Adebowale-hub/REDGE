@@ -795,8 +795,12 @@ footer {
 
     .about-content,
     .case-study-layout,
-    .contact-card {
+    .contact-layout {
         grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        gap: 2rem;
     }
 
     .case-study-details {
