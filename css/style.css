@@ -486,7 +486,7 @@ p {
     color: #fff;
 }
 
-/* Case Studies */
+/* Proof of Work */
 .full-width-panel {
     background: #0a0a0a;
     width: 100vw;
@@ -495,44 +495,25 @@ p {
     padding-right: 10vw;
 }
 
-.case-study-layout {
+.proof-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    background: var(--bg-panel);
-    border: 1px solid var(--border-color);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.proof-image {
+    width: 100%;
+    height: auto;
     border-radius: 12px;
-    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
 }
 
-.case-study-image-placeholder {
-    background: #111;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    border-right: 1px solid var(--border-color);
-}
-
-.case-study-details {
-    padding: 3rem 3rem 3rem 0;
-}
-
-.cs-block {
-    margin-bottom: 1.5rem;
-}
-
-.cs-block h4 {
-    font-size: 0.8rem;
-    color: var(--primary-red);
-    margin-bottom: 0.5rem;
-}
-
-.cs-block p {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-bottom: 0;
+.proof-image:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-red);
 }
 
 /* Communities Horizontal Scroll */
@@ -794,17 +775,12 @@ footer {
     }
 
     .about-content,
-    .case-study-layout,
     .contact-layout {
         grid-template-columns: 1fr;
     }
 
     .contact-layout {
         gap: 2rem;
-    }
-
-    .case-study-details {
-        padding: 2rem;
     }
 }
 
